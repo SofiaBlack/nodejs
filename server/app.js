@@ -11,7 +11,7 @@ app.get('/', function(rec, res) {
 });
 
 app.get('/pagina1', function(rec, res) {
-    res.send("<h1>Prima pagina</h1>");
+    res.sendFile(path.join(__dirname, 'views/pagina1.html'));
 });
 //su qualeporta attivare i server node.js
 app.listen(3000, function(){
