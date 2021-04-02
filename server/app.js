@@ -7,7 +7,7 @@ var app = express();
 // rec: oggetto client chi fa la richiesta
 //res: oggetto server chi risponde
 app.get('/', function(rec, res) {
-    res.sendfile(path.join(__dirname, 'views/index.html'));
+    res.sendFile(path.join(__dirname, 'views/index.html'));
 });
 
 app.get('/pagina1', function(rec, res) {
