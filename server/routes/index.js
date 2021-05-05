@@ -3,11 +3,11 @@ var router = express.Router();
 
 /* GET home page. */
 router.get('/', function(req, res, next) {
-  res.render('index', { title: 'HOME', link: [ '/contatti']});
+  res.render('index', { title: 'HOME', link: [['HOME','/'], ['CONTATTI', '/contatti']]});
 });
 
 router.get('/contatti', function(req, res, next) {
-  res.render('contatti', {title: 'CONTATTI', link: ['/']});
+  res.render('contatti', {title: 'CONTATTI', link: [['HOME','/'], ['CONTATTI', '/contatti']]});
 });
 
 module.exports = router;
