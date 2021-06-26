@@ -4,13 +4,13 @@ body {
 }
 
 a {
-  color: #00B7FF;
+  color: black;
 }
 
-.green {
+#green {
     color: green;
 }
 
-#red {
+.red {
     color: red;
 }
